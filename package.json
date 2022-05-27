@@ -16,6 +16,7 @@
     "mongoose": "^5.11.12"
   },
   "devDependencies": {
+    "heroku": "^7.60.2",
     "nodemon": "^2.0.16"
   }
 }
