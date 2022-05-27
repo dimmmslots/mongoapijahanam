@@ -22,7 +22,7 @@ mongoose.connect(uri, param);
 
 mongoose.connection.once("open", () => {
   console.log("connected to database");
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running...");
   });
 });
