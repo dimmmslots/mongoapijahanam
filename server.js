@@ -69,7 +69,7 @@ app.post('/register', (req, res) => {
   });
 });
 
-app.get("/dashboard", (req, res) => {
+app.get("/dashboard", connectEnsureLogin.ensureLoggedIn('/login'),(req, res) => {
   res.sendFile(__dirname + "/static/dashboard.html");
 });
 
