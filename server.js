@@ -10,6 +10,7 @@ const connectEnsureLogin = require("connect-ensure-login");
 config()
 
 const app = express();
+app.use(express.static("static"));
 app.set('x-powered-by', false);
 app.use(session({
   secret: process.env.SESSION_SECRET,
